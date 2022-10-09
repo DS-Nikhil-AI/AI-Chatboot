@@ -87,4 +87,3 @@ stories:
       are you a bot?
     intent: bot_challenge
   - action: utter_iamabot
-  # https://www.youtube.com/watch?v=k5UeywXA28k&list=PL75e0qA87dlHQny7z43NduZHPo6qd-cRc&index=3
