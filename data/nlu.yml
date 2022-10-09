@@ -1,0 +1,88 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: inform
+  examples: |
+    - [Sitka] (location)
+    - [Juneau] (location)
+    - [Virginia] (location)
+    - [Cusseta] (location)
+    - [Chicago] (location)
+    - [tuscon] (location)
+    - [Columbus] (location)
+    - [San Franciso] (location)
+  
+
+
+- intent: search_provider
+  examples: |
+    - I need a [hospital] (facility_type)
+    - find me a [hospital] (facility_type)
+    - find near by a [hospital] (facility_type)
+    - [hospital]
+    - find near by  a [hospital] (facility_type) [Juneau](location)
+    - find near by a hospital [Cusseta] (location)
+    - I need [home health agency] (facility_type) 
+    - I need [ambulance] (facility_type)
+    - I need [ambulance] at my home near [Virginia] (location)
+    - [ambulance]
+    - [ambulance] [Columbus] (location)
+    - [hospital] [Juneau] (location)
+    - [ambulance] [San Franciso] (location)
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - bot
+    - human
